@@ -1,22 +1,22 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/nest-jsapollo-federation/src",
+  "sourceRoot": "apps/gateway/src",
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/nest-jsapollo-federation/tsconfig.app.json"
+    "tsConfigPath": "apps/gateway/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/nest-jsapollo-federation",
+  "root": "apps/gateway",
   "projects": {
-    "nest-jsapollo-federation": {
+    "gateway": {
       "type": "application",
-      "root": "apps/nest-jsapollo-federation",
+      "root": "apps/gateway",
       "entryFile": "main",
-      "sourceRoot": "apps/nest-jsapollo-federation/src",
+      "sourceRoot": "apps/gateway/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/nest-jsapollo-federation/tsconfig.app.json"
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
       }
     },
     "users": {
